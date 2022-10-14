@@ -30,11 +30,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
-**Hi, I'm Media Search bot**
+**مرحبا ، بك في بوت الباحث البطاقة الوقودية**
 
-Here you can search files in inline mode. Just press following buttons and start searching.
+هنا يمكنك البحث عن الملفات في الوضع المضمن. ما عليك سوى الضغط على الأزرار التالية والبدء في البحث.
 """
 
 START_MSG = environ.get('START_MSG', default_start_msg)
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
+SHARE_BUTTON_TEXT = 'فحص خارجي {username} للبحث عن الملفات'
+INVITE_MSG = environ.get('INVITE_MSG', 'ارجوك انظم @.... الى هذا البوت')
