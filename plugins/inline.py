@@ -20,7 +20,7 @@ async def answer(bot, query):
         await query.answer(
             results=[],
             cache_time=0,
-            switch_pm_text='You have to subscribe channel',
+            switch_pm_text='يجب عليك الاشتراك في القناة',
             switch_pm_parameter="subscribe",
         )
         return
@@ -79,8 +79,8 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Share bot', url=url),
+            InlineKeyboardButton('ابحث مرة أخرى', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('مشاركة البوت', url=url),
         ]
     ]
     return InlineKeyboardMarkup(buttons)
